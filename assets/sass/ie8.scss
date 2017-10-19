@@ -4,51 +4,47 @@
 @import 'libs/skel';
 
 /*
-	Multiverse by HTML5 UP
+	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		border: solid 2px _palette(border);
+		border: solid 2px !important;
 
-		&.special {
-			border: 0;
+		&.next {
+			padding-right: 1.75em;
+
+			&:before, &:after {
+				display: none;
+			}
 		}
 	}
 
-/* Panel */
+/* Tiles */
 
-	.panel {
+	.tiles {
+		article {
+			width: 50%;
+			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+			background-size: cover;
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		&:after {
+			display: none;
+		}
+	}
+
+/* Menu */
+
+	#menu {
 		background: _palette(bg);
-		display: none;
-
-		&.active {
-			display: block;
-		}
-
-		> .closer {
-			&:before {
-				content: '\00d7';
-				font-size: 42px;
-			}
-		}
-	}
-
-/* Main */
-
-	#main {
-		.thumb {
-			> h2 {
-				text-align: center;
-				width: 100%;
-				left: 0;
-			}
-		}
 	}
